@@ -1,4 +1,4 @@
-import Sidebar from "../components/sideBar/Sidebar.tsx";
+import Sidebar from "../components/sidebar/Sidebar.tsx";
 
 import {Outlet} from "react-router";
 import Header from "../components/header/Header.tsx";
