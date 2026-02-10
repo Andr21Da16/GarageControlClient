@@ -5,6 +5,7 @@ import BusinessIcon from "@mui/icons-material/Business";
 import PaymentIcon from "@mui/icons-material/Payment";
 import MapIcon from "@mui/icons-material/Map";
 import FireTruckIcon from "@mui/icons-material/FireTruck";
+import { CampaignRounded, Download, EditDocument, Settings } from "@mui/icons-material";
 
 
 export type IconName =
@@ -14,7 +15,11 @@ export type IconName =
     | "business"
     | "payments"
     | "map"
-    | "truck";
+    | "truck"
+    | "download"
+    | "settings"
+    | "campaign"
+    | "document";
 
 export const iconMapper: Record<IconName, React.ElementType> = {
     dashboard: DashboardIcon,
@@ -24,5 +29,9 @@ export const iconMapper: Record<IconName, React.ElementType> = {
     payments: PaymentIcon,
     map: MapIcon,
     truck: FireTruckIcon,
+    download: Download,
+    settings: Settings,
+    campaign: CampaignRounded,
+    document: EditDocument
 };
 

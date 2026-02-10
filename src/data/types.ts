@@ -11,3 +11,8 @@ export interface UserInfoProps {
     name: string,
     rol: string,
 }
+
+export interface RouteHandle {
+    title?: string;
+    screenTitle?: string;
+}
