@@ -16,3 +16,7 @@ export interface RouteHandle {
     title?: string;
     screenTitle?: string;
 }
+ export interface ButtonProps {
+     icon: IconName
+     name?: string
+ }

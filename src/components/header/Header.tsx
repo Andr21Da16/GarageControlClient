@@ -2,7 +2,7 @@
 import { CampaignRounded } from "@mui/icons-material";
 import { Settings } from "@mui/icons-material";
 import { useMatches } from "react-router";
-import type {RouteHandle} from "../../data/types.ts";
+import type {ButtonProps, RouteHandle} from "../../data/types.ts";
 import SearchBar from "./SearchBar.tsx";
 import ButtonsHeader from "./ButtonsHeader.tsx";
 

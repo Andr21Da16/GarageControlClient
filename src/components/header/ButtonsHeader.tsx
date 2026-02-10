@@ -1,10 +1,8 @@
-import { iconMapper, type IconName } from "../../utils/IconMapper";
+import { iconMapper } from "../../utils/IconMapper";
 import { HelpOutline } from "@mui/icons-material";
+import type {ButtonProps} from "../../data/types.ts";
 
-interface ButtonProps {
-    icon: IconName
-    name?: string
-}
+
 
 const ButtonsHeader = ({ icon, name }: ButtonProps) => {
     const Icon = iconMapper[icon] || HelpOutline;
