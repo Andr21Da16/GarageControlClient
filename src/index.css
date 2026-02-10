@@ -1,9 +1,37 @@
 @import "tailwindcss";
 
-*{
+* {
     box-sizing: border-box;
-    
 }
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: grid;
+    grid-template-areas:
+    "aside header"
+    "aside main";
+    grid-template-columns: 280px minmax(0, 1fr);
+    grid-template-rows: 80px minmax(0, 1fr);
+    gap: 1px;
+    background: var(--color-bordes);
+    color: #ffffff;
+}
+
+/* CLAVE para que nada rompa el grid */
+#root > * {
+    min-width: 0;
+}
+
+.color {
+    color: black;
+}
+
 
 @theme {
     --color-primary: #0f172a ;
@@ -21,26 +49,4 @@
     --text-2xl: 1.4rem;
 }
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
-}
-
-#root {
-    display: grid;
-    grid-template-areas:
-            "aside header"
-            "aside main";
-    grid-template-columns: 280px 1fr;
-    grid-template-rows: 80px 1fr;
-    background: var(--color-bordes);
-    color: #FFFFFF;
-    gap: .445px;
-
-    
-}
-
-.color{
-    color: black;
-}
 
